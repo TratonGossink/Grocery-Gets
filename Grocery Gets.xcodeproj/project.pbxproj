@@ -11,6 +11,7 @@
 		E58D03FF2B35ACF700CDFAA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */; };
 		E58D04012B35ACF800CDFAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58D04002B35ACF800CDFAA6 /* Assets.xcassets */; };
 		E58D04042B35ACF800CDFAA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58D04032B35ACF800CDFAA6 /* Preview Assets.xcassets */; };
+		E58D040D2B35AFE400CDFAA6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E58D04002B35ACF800CDFAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58D04032B35ACF800CDFAA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		E58D03FB2B35ACF700CDFAA6 /* Grocery Gets */ = {
 			isa = PBXGroup;
 			children = (
+				E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */,
 				E58D03FC2B35ACF700CDFAA6 /* Grocery_GetsApp.swift */,
 				E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */,
 				E58D04002B35ACF800CDFAA6 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				E58D03FF2B35ACF700CDFAA6 /* ContentView.swift in Sources */,
 				E58D03FD2B35ACF700CDFAA6 /* Grocery_GetsApp.swift in Sources */,
+				E58D040D2B35AFE400CDFAA6 /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
