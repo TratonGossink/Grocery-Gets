@@ -7,20 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E536A7E12B767ABC00D3B7D2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7E02B767ABC00D3B7D2 /* RootView.swift */; };
+		E536A7E32B76A5F100D3B7D2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7E22B76A5F100D3B7D2 /* TabBarView.swift */; };
+		E536A7E82B770B2800D3B7D2 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E536A7E52B770B2700D3B7D2 /* LexendDeca-Regular.ttf */; };
+		E536A7E92B770B2800D3B7D2 /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E536A7E62B770B2700D3B7D2 /* LexendDeca-SemiBold.ttf */; };
+		E536A7EA2B770B2800D3B7D2 /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E536A7E72B770B2700D3B7D2 /* LexendDeca-Bold.ttf */; };
+		E536A7EE2B77B5BD00D3B7D2 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7ED2B77B5BD00D3B7D2 /* TabBarButton.swift */; };
+		E536A7F12B79298100D3B7D2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7F02B79298100D3B7D2 /* ListViewModel.swift */; };
+		E536A7FB2B79989200D3B7D2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7FA2B79989200D3B7D2 /* ListView.swift */; };
+		E536A7FD2B7A953300D3B7D2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7FC2B7A953300D3B7D2 /* SearchView.swift */; };
+		E536A7FF2B7A95DE00D3B7D2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A7FE2B7A95DE00D3B7D2 /* SettingsView.swift */; };
+		E536A8012B7AD59800D3B7D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A8002B7AD59800D3B7D2 /* SettingsViewModel.swift */; };
+		E536A8032B7AEEC600D3B7D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A8022B7AEEC600D3B7D2 /* Constants.swift */; };
+		E536A8052B7AFE8800D3B7D2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A8042B7AFE8800D3B7D2 /* SearchViewModel.swift */; };
+		E536A8082B7B095000D3B7D2 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E536A8062B7B095000D3B7D2 /* DataModel.xcdatamodeld */; };
+		E536A80F2B7DA99400D3B7D2 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A80E2B7DA99400D3B7D2 /* CategoryList.swift */; };
+		E536A8112B7DA99F00D3B7D2 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A8102B7DA99F00D3B7D2 /* ItemList.swift */; };
+		E536A8132B7DA9C300D3B7D2 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536A8122B7DA9C300D3B7D2 /* MainList.swift */; };
+		E557CDCD2B82D4B700DD197F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557CDCC2B82D4B700DD197F /* Persistence.swift */; };
+		E557CDCF2B84C67200DD197F /* LexendDeca-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E557CDCE2B84405D00DD197F /* LexendDeca-Black.ttf */; };
 		E58D03FD2B35ACF700CDFAA6 /* Grocery_GetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D03FC2B35ACF700CDFAA6 /* Grocery_GetsApp.swift */; };
-		E58D03FF2B35ACF700CDFAA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */; };
 		E58D04012B35ACF800CDFAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58D04002B35ACF800CDFAA6 /* Assets.xcassets */; };
 		E58D04042B35ACF800CDFAA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58D04032B35ACF800CDFAA6 /* Preview Assets.xcassets */; };
 		E58D040D2B35AFE400CDFAA6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */; };
+		E5C1F1022B75AF7100D67E08 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1F1012B75AF7100D67E08 /* WelcomeView.swift */; };
+		E5D9BEAA2B7677C40068A368 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9BEA92B7677C40068A368 /* OnboardingButton.swift */; };
+		E5D9BEAC2B76783B0068A368 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9BEAB2B76783B0068A368 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E536A7E02B767ABC00D3B7D2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E536A7E22B76A5F100D3B7D2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E536A7E52B770B2700D3B7D2 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		E536A7E62B770B2700D3B7D2 /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		E536A7E72B770B2700D3B7D2 /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		E536A7ED2B77B5BD00D3B7D2 /* TabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		E536A7F02B79298100D3B7D2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E536A7FA2B79989200D3B7D2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E536A7FC2B7A953300D3B7D2 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E536A7FE2B7A95DE00D3B7D2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E536A8002B7AD59800D3B7D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		E536A8022B7AEEC600D3B7D2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E536A8042B7AFE8800D3B7D2 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E536A8072B7B095000D3B7D2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E536A80E2B7DA99400D3B7D2 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		E536A8102B7DA99F00D3B7D2 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		E536A8122B7DA9C300D3B7D2 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
+		E557CDCC2B82D4B700DD197F /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E557CDCE2B84405D00DD197F /* LexendDeca-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Black.ttf"; sourceTree = "<group>"; };
 		E58D03F92B35ACF700CDFAA6 /* Grocery Gets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery Gets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D03FC2B35ACF700CDFAA6 /* Grocery_GetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery_GetsApp.swift; sourceTree = "<group>"; };
-		E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E58D04002B35ACF800CDFAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58D04032B35ACF800CDFAA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		E5C1F1012B75AF7100D67E08 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E5C1F1032B763C8900D67E08 /* Grocery-Gets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Grocery-Gets-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E5D9BEA92B7677C40068A368 /* OnboardingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
+		E5D9BEAB2B76783B0068A368 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +77,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E536A7E42B770AB400D3B7D2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E536A7E72B770B2700D3B7D2 /* LexendDeca-Bold.ttf */,
+				E557CDCE2B84405D00DD197F /* LexendDeca-Black.ttf */,
+				E536A7E52B770B2700D3B7D2 /* LexendDeca-Regular.ttf */,
+				E536A7E62B770B2700D3B7D2 /* LexendDeca-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E536A7EB2B77B58400D3B7D2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E536A7ED2B77B5BD00D3B7D2 /* TabBarButton.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E536A7EF2B79297100D3B7D2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E536A7F02B79298100D3B7D2 /* ListViewModel.swift */,
+				E536A8002B7AD59800D3B7D2 /* SettingsViewModel.swift */,
+				E536A8042B7AFE8800D3B7D2 /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E536A7F72B7992A400D3B7D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E536A80E2B7DA99400D3B7D2 /* CategoryList.swift */,
+				E536A8102B7DA99F00D3B7D2 /* ItemList.swift */,
+				E536A8122B7DA9C300D3B7D2 /* MainList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E58D03F02B35ACF700CDFAA6 = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +135,14 @@
 		E58D03FB2B35ACF700CDFAA6 /* Grocery Gets */ = {
 			isa = PBXGroup;
 			children = (
-				E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */,
 				E58D03FC2B35ACF700CDFAA6 /* Grocery_GetsApp.swift */,
-				E58D03FE2B35ACF700CDFAA6 /* ContentView.swift */,
-				E58D04002B35ACF800CDFAA6 /* Assets.xcassets */,
+				E557CDCC2B82D4B700DD197F /* Persistence.swift */,
+				E536A8062B7B095000D3B7D2 /* DataModel.xcdatamodeld */,
+				E536A7F72B7992A400D3B7D2 /* Models */,
+				E536A7EF2B79297100D3B7D2 /* ViewModels */,
+				E5D9BEAD2B7679B80068A368 /* Views */,
+				E5C1F1062B763DEE00D67E08 /* Parameters */,
+				E5C1F1032B763C8900D67E08 /* Grocery-Gets-Info.plist */,
 				E58D04022B35ACF800CDFAA6 /* Preview Content */,
 			);
 			path = "Grocery Gets";
@@ -68,6 +154,33 @@
 				E58D04032B35ACF800CDFAA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5C1F1062B763DEE00D67E08 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				E536A7EB2B77B58400D3B7D2 /* TabBar */,
+				E536A7E42B770AB400D3B7D2 /* Fonts */,
+				E5D9BEA92B7677C40068A368 /* OnboardingButton.swift */,
+				E5D9BEAB2B76783B0068A368 /* Fonts.swift */,
+				E58D04002B35ACF800CDFAA6 /* Assets.xcassets */,
+				E536A8022B7AEEC600D3B7D2 /* Constants.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		E5D9BEAD2B7679B80068A368 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E58D040C2B35AFE400CDFAA6 /* LaunchScreen.swift */,
+				E5C1F1012B75AF7100D67E08 /* WelcomeView.swift */,
+				E536A7E02B767ABC00D3B7D2 /* RootView.swift */,
+				E536A7FA2B79989200D3B7D2 /* ListView.swift */,
+				E536A7FC2B7A953300D3B7D2 /* SearchView.swift */,
+				E536A7FE2B7A95DE00D3B7D2 /* SettingsView.swift */,
+				E536A7E22B76A5F100D3B7D2 /* TabBarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +199,8 @@
 			dependencies = (
 			);
 			name = "Grocery Gets";
+			packageProductDependencies = (
+			);
 			productName = "Grocery Gets";
 			productReference = E58D03F92B35ACF700CDFAA6 /* Grocery Gets.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +229,8 @@
 				Base,
 			);
 			mainGroup = E58D03F02B35ACF700CDFAA6;
+			packageReferences = (
+			);
 			productRefGroup = E58D03FA2B35ACF700CDFAA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,7 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58D04042B35ACF800CDFAA6 /* Preview Assets.xcassets in Resources */,
+				E536A7EA2B770B2800D3B7D2 /* LexendDeca-Bold.ttf in Resources */,
+				E536A7E92B770B2800D3B7D2 /* LexendDeca-SemiBold.ttf in Resources */,
+				E536A7E82B770B2800D3B7D2 /* LexendDeca-Regular.ttf in Resources */,
 				E58D04012B35ACF800CDFAA6 /* Assets.xcassets in Resources */,
+				E557CDCF2B84C67200DD197F /* LexendDeca-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +261,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58D03FF2B35ACF700CDFAA6 /* ContentView.swift in Sources */,
+				E536A8132B7DA9C300D3B7D2 /* MainList.swift in Sources */,
+				E5D9BEAA2B7677C40068A368 /* OnboardingButton.swift in Sources */,
+				E536A8052B7AFE8800D3B7D2 /* SearchViewModel.swift in Sources */,
+				E557CDCD2B82D4B700DD197F /* Persistence.swift in Sources */,
+				E5D9BEAC2B76783B0068A368 /* Fonts.swift in Sources */,
+				E536A7E32B76A5F100D3B7D2 /* TabBarView.swift in Sources */,
+				E536A7FD2B7A953300D3B7D2 /* SearchView.swift in Sources */,
+				E536A8032B7AEEC600D3B7D2 /* Constants.swift in Sources */,
+				E536A80F2B7DA99400D3B7D2 /* CategoryList.swift in Sources */,
+				E536A7E12B767ABC00D3B7D2 /* RootView.swift in Sources */,
+				E536A8082B7B095000D3B7D2 /* DataModel.xcdatamodeld in Sources */,
 				E58D03FD2B35ACF700CDFAA6 /* Grocery_GetsApp.swift in Sources */,
+				E536A7F12B79298100D3B7D2 /* ListViewModel.swift in Sources */,
+				E536A7EE2B77B5BD00D3B7D2 /* TabBarButton.swift in Sources */,
+				E536A7FB2B79989200D3B7D2 /* ListView.swift in Sources */,
+				E5C1F1022B75AF7100D67E08 /* WelcomeView.swift in Sources */,
 				E58D040D2B35AFE400CDFAA6 /* LaunchScreen.swift in Sources */,
+				E536A7FF2B7A95DE00D3B7D2 /* SettingsView.swift in Sources */,
+				E536A8112B7DA99F00D3B7D2 /* ItemList.swift in Sources */,
+				E536A8012B7AD59800D3B7D2 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -276,14 +414,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Grocery Gets/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A5RR2HZW6;
+				DEVELOPMENT_TEAM = 4SZX5NQQ6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Grocery-Gets-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,6 +431,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gForceStudio.Grocery-Gets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,14 +448,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Grocery Gets/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A5RR2HZW6;
+				DEVELOPMENT_TEAM = 4SZX5NQQ6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Grocery-Gets-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +465,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gForceStudio.Grocery-Gets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,6 +496,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E536A8062B7B095000D3B7D2 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E536A8072B7B095000D3B7D2 /* Model.xcdatamodel */,
+			);
+			currentVersion = E536A8072B7B095000D3B7D2 /* Model.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E58D03F12B35ACF700CDFAA6 /* Project object */;
 }

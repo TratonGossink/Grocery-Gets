@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct Grocery_GetsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+    
+    let persistenceController = PersistenceController.shared
+    
+    @StateObject var listViewModel = ListViewModel()
+    @StateObject var searchViewModel = SearchViewModel()
+    @StateObject var settingsViewModel = SettingsViewModel()
+    
+        var body: some Scene {
+            WindowGroup {
+                RootView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)}
     }
 }

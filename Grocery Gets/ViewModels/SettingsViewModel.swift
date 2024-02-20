@@ -5,14 +5,15 @@
 //  Created by Traton Gossink on 2/12/24.
 //
 
+import Foundation
 import SwiftUI
 
-struct SettingsViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class SettingsViewModel: ObservableObject {
+    
+    @AppStorage(Constants.DarkModeKey) var isDarkMode = false
+
+    
+    
 }
 
-#Preview {
-    SettingsViewModel()
-}
+

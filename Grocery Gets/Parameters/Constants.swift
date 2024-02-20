@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum Constants {
+    
+    static let DarkModeKey = "DarkModeActive"
+}

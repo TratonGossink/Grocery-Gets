@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class CategoryList: ObservableObject {
+
+    dynamic var title: String = ""
+    dynamic var done: Bool = false
+    
+}

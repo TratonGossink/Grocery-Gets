@@ -15,9 +15,9 @@ struct OnboardingButton: ButtonStyle {
         ZStack {
             Rectangle()
                 .frame(height: 50)
-                .cornerRadius(4)
+                .cornerRadius(12)
                 .font(Font.buttonText)
-                .foregroundColor(Color("button-primary"))
+                .foregroundColor(Color("btn-background"))
                 .scaleEffect(configuration.isPressed ? 0.95 : 1)
                 .animation(.easeIn, value: 5)
             

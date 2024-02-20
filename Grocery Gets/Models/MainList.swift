@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class MainList: ObservableObject {
+    
+    dynamic var title: String = ""
+    
+}

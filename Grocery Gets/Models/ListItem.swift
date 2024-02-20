@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import RealmSwift
+import CoreData
 
-class ListItem: Object, ObjectKeyIdentifiable {
+class ListItem: ObservableObject {
     
-    @objc dynamic var name: String = ""
+    @objc dynamic var listTitle: String = ""
     
-    var parentList = LinkingObjects(fromType: Category.self, property: "name")
+//    var parentItem = LinkingObjects(fromType: CategoryItem.self, property: "name")
     
 }
