@@ -11,11 +11,14 @@ struct LaunchScreen: View {
     @State private var isActive: Bool = false
     @State private var iconSize = 0.4
     @State private var iconOpacity = 0.6
-    
+//    private var tabSelection: TabSelection
+//    private var isSelectedShowing: Bool = false
     
     var body: some View {
         if isActive {
-            ContentView()
+//            CategoryView()
+//            SettingsView(isSettingsShowing: true)
+//            MainMenuView(tabSelection: TabSelection, isSelectedShowing: $isSelectedShowing)
         } else {
             VStack{
                 VStack{
@@ -34,18 +37,16 @@ struct LaunchScreen: View {
                         self.iconOpacity = 1.0
                     }
                 }
-                
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.isActive = true
                 }
             }
         }
-  
     }
 }
 
-#Preview {
-    LaunchScreen()
-}
+//#Preview {
+//    LaunchScreen()
+//}
