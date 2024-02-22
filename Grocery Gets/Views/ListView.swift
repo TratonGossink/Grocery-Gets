@@ -19,32 +19,29 @@ struct ListView: View {
             ZStack {
                 Color("main-background")
                     .ignoresSafeArea()
-                ScrollView {
-                        HStack {
-                            Text("Lists")
-                                .font(Font.mainTitle)
-                                .padding(.leading, 40)
-                            Spacer()
-                            Button {
-                                
-                            } label: {
-                                Image(systemName: "pencil.line")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                //                                .tint(Color("selected-tabitem"))
-                                    .padding(.trailing, 40)
-                            }
-                        }
-                        Divider()
-                            .frame(height: 2)
-                            .overlay(Color("btn-text"))
-                            .padding(.leading, 20)
-                            .padding(.trailing, 20)
-                            .padding(.top, 10)
-                    Spacer()
-                    Text("List")
-                    }
+                Divider()
+                    .frame(height: 2)
+                    .overlay(Color("btn-text"))
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                Spacer()
+                List {
+                    Text("Placeholder")
                 }
+                .background(Color("tabBar-background"))
+            }
+            .navigationTitle("Lists")
+            .toolbar {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "pencil.line")
+                        .padding(.trailing, 30)
+//                        .padding(.top, 80)
+                        .foregroundColor(Color("btn-text"))
+                }
+            }
+            .background(Color("main-background"))
         }
     }
 }
