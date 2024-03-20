@@ -6,48 +6,53 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ListItemDetail: View {
-    @State var isShowingEditForm: Bool = false
-    
-    var listItem: ListItemModel
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: [SortDescriptor(\ListMain.status, order: .reverse), SortDescriptor(\ListMain.name), SortDescriptor(\ListMain.date)]) var listItems: [ListMain]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(listItem.name)
-                .font(Font.mainTitle)
-            Text(formatDate(listItem.date))
-                .font(.subheadline)
-                .foregroundColor(.gray)
-            StatusIndicatorViewModel(status: listItem.status)
+        List {
+            ForEach(listItems) { listItem in
+                NavigationLink(value: listItem) {
+                    VStack(alignment: .leading) {
+                        Text(listItem.name)
+                            .font(.headline)
+                        Text(listItem.date.formatted(date: .long, time: .shortened))
+                    }
+                }
+            }
+            .onDelete(perform: deleteItem)
         }
-        .padding()
-        .navigationTitle("Item Details")
     }
     
-    enum ItemStatus: String, CaseIterable {
-        case pending
-        case complete
+    //MARK: - Search Method(s)
+    init(sort: SortDescriptor<ListMain>, searchString: String) {
+        _listItems = Query(filter: #Predicate {
+            if searchString.isEmpty {
+                return true
+            } else {
+                return $0.name.localizedStandardContains(searchString)
+            }
+        }, sort: [sort])
     }
-
+     
+    //MARK: - Delete Item Method
+    
+    func deleteItem(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let itemDelete = listItems[index]
+            modelContext.delete(itemDelete)
+        }
+    }
+    
+    //MARK: - Date Format Method(s)
     private func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .short
         return formatter.string(from: date)
     }
-    
-    func createDate(year: Int, month: Int, day: Int, hour: Int, minute: Int) -> Date {
-        var components = DateComponents()
-        components.year = year
-        components.month = month
-        components.day = day
-        components.hour = hour
-        components.minute = minute
-        components.timeZone = TimeZone.current
-        let calendar = Calendar.current
-        return calendar.date(from: components)!
-    }
-    
 }
 

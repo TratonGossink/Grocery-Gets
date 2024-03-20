@@ -8,33 +8,32 @@
 import SwiftUI
 
 struct RootView: View {
-    
-//    @EnvironmentObject var listViewModel: ListViewModel
     @State var selectedTab: Tabs = .Lists
-    @State var isListActive: Bool = false
-    @State var isSettingsActive = false
+    @State var isListsActive: Bool = false
+    @State var isSettingsActive: Bool = false
+    @State var isSearchActive: Bool = false
     
     var body: some View {
         
         ZStack {
-            Color("main-background")
+            Color("primary-background")
                 .ignoresSafeArea()
             VStack {
-//                switch selectedTab {
-////                case .Lists:
-////                    ListView(isListActive: $isListActive, isSettingsActive: $isSettingsActive)
-//                case .Search:
-//                    SearchView(isSettingsActive: $isSettingsActive, isListActive: $isListActive)
-//                case .Settings:
-//                    SettingsView(isSettingsActive: $isSettingsActive, isListActive: $isListActive)
-//                }
+                switch selectedTab {
+                case .Lists:
+                    ListView()
+                case .Settings:
+                    SettingsView(isSettingsActive: $isSettingsActive)
+                case .Search:
+                    SearchView(isSearchActive: $isSearchActive)
+                }
                 Spacer()
-                TabBarView(selectedTab: $selectedTab, isSettingsActive: $isSettingsActive, isListActive: $isListActive)
+                TabBarView(selectedTab: $selectedTab, isSettingsActive: $isSettingsActive, isSearchActive: $isSearchActive, isListsActive: $isListsActive)
             }
         }
     }
 }
 
-#Preview {
-    RootView()
-}
+//#Preview {
+//    RootView()
+//}

@@ -6,47 +6,62 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ListView: View {
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: [ SortDescriptor(\ListMain.name), SortDescriptor(\ListMain.date)]) var listItems: [ListMain]
     
-    //    @EnvironmentObject var listViewModel: ListViewModel
-    
-    //    @Binding var isListActive: Bool
-    //    @Binding var isSettingsActive: Bool
+    @State var sortOrder = SortDescriptor(\ListMain.name)
+    @State var path = [ListMain]()
+    @State private var searchText = ""
+    @State private var isListInputShowing = false
+//    @State var listMain: ListMain
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color("main-background")
-                    .ignoresSafeArea()
-                Divider()
-                    .frame(height: 2)
-                    .overlay(Color("btn-text"))
-                    .padding(.leading, 20)
-                    .padding(.trailing, 20)
-                Spacer()
-                List {
-                    Text("Placeholder")
+        NavigationStack(path: $path) {
+            ListItemDetail(sort: sortOrder, searchString: searchText)
+                .scrollContentBackground(.hidden)
+                .background(Color("secondary-background"))
+                .navigationTitle("Lists")
+                .navigationDestination(for: ListMain.self, destination: SubListView.init)
+                .toolbar {
+                    Button("Add", systemImage: "plus"){
+                        isListInputShowing.toggle()
+                    }
+                    .sheet(isPresented: $isListInputShowing) {
+                        ListInputForm()
+                    }
+                    Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                        Picker("Sort", selection: $sortOrder) {
+                            Text("Name")
+                                .tag(SortDescriptor(\ListMain.name))
+                            Text("Status")
+                                .tag(SortDescriptor(\ListMain.status, order: .reverse))
+                            Text("Date")
+                                .tag(SortDescriptor(\ListMain.date))
+                        }
+                        .pickerStyle(.inline)
+                    }
                 }
-                .background(Color("tabBar-background"))
-            }
-            .navigationTitle("Lists")
-            .toolbar {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "pencil.line")
-                        .padding(.trailing, 30)
-//                        .padding(.top, 80)
-                        .foregroundColor(Color("btn-text"))
-                }
-            }
-            .background(Color("main-background"))
         }
     }
+
+//MARK: - Create New Item Method
+func addNewItem() {
+    let newItem = ListMain()
+    modelContext.insert(newItem)
+    path = [newItem]
+}
+        
+//MARK: - Delete Item Method
+//    func deleteItem(_ indexSet: IndexSet) {
+//        for index in indexSet {
+//            let itemDelete = listMain[index]
+//            modelContext.delete(itemDelete)
+//        }
 }
 
-
-#Preview {
-    ListView()
-}
+//#Preview {
+//    ListView(isListActive: .constant(false), listMain: ListMain)
+//}

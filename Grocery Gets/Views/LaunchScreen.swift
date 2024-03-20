@@ -11,8 +11,6 @@ struct LaunchScreen: View {
     @State private var isActive: Bool = false
     @State private var iconSize = 0.4
     @State private var iconOpacity = 0.6
-//    private var tabSelection: TabSelection
-//    private var isSelectedShowing: Bool = false
     
     var body: some View {
         if isActive {

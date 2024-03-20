@@ -7,23 +7,26 @@
 
 import SwiftUI
 
-struct SettingsView: View{
-    
-    @EnvironmentObject var settingsViewModel: SettingsViewModel
+struct SettingsView: View {
+
     @Binding var isSettingsActive: Bool
-    @Binding var isListActive: Bool
     
     var body: some View {
         
-        Form {
-            NavigationStack{
-                Toggle("Dark Mode", isOn: $settingsViewModel.isDarkMode)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+              
+                Text("Placeholder")
             }
+            .scrollContentBackground(.hidden)
+            .background(Color("secondary-background"))
+            .navigationTitle("Settings")
+            .navigationBarBackButtonHidden(true)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    SettingsView(isSettingsActive: .constant(false), isListActive: .constant(false))
+    SettingsView(isSettingsActive: .constant(false))
 }
